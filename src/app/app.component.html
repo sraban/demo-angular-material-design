@@ -1,2 +1,12 @@
-<a [routerLink]="['p1']">Page1</a> | <a [routerLink]="['p2']">Page2</a>
+<mat-toolbar color="primary">
+   <mat-toolbar-row>
+      <span><a [routerLink]="['/']">HOME</a></span>
+      <span class="spacer"></span>
+      <a  mat-button  [routerLink]="['p1']">Material Components</a>
+      <a  mat-button  [routerLink]="['register']">Register</a>
+      <a  mat-button  [routerLink]="['login']">Login</a>
+
+   </mat-toolbar-row>
+</mat-toolbar>
+
 <router-outlet></router-outlet>

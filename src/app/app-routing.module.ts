@@ -13,7 +13,11 @@ const routes: Routes = [
     component: ReactiveFormOneComponent
   },
   {
-    path: 'p2',
+    path: 'login',
+    component: ReactiveFormTwoComponent
+  },
+  {
+    path: 'register',
     component: ReactiveFormTwoComponent
   }];
 

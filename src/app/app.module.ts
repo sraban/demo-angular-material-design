@@ -16,6 +16,8 @@ import {
   MatRadioModule,
   MatSelectModule,
   MatOptionModule,
+  MatProgressSpinnerModule,
+  MatTableModule,
   MatSlideToggleModule,ErrorStateMatcher,ShowOnDirtyErrorStateMatcher
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -52,7 +54,9 @@ import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.
     MatRadioModule,
     MatSelectModule,
     MatOptionModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatProgressSpinnerModule,
+    MatTableModule
   ],
   exports: [
     MatButtonModule,
@@ -68,7 +72,9 @@ import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.
     MatRadioModule,
     MatSelectModule,
     MatOptionModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatProgressSpinnerModule,
+    MatTableModule
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
