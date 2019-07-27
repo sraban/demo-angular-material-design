@@ -2,6 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
+import {A11yModule} from '@angular/cdk/a11y';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {PortalModule} from '@angular/cdk/portal';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+
 import {
   MatButtonModule,
   MatMenuModule,
@@ -17,7 +25,18 @@ import {
   MatSelectModule,
   MatOptionModule,
   MatProgressSpinnerModule,
+  MatProgressBarModule,
+  MatAutocompleteModule,
+  MatDividerModule,
+  MatBadgeModule,
+  MatListModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatTooltipModule,
+  MatDialogModule,
   MatTableModule,
+  MatSortModule,
+  MatPaginatorModule,
   MatSlideToggleModule,ErrorStateMatcher,ShowOnDirtyErrorStateMatcher
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,14 +46,17 @@ import { AppComponent } from './app.component';
 
 
 
-import { ReactiveFormOneComponent } from './reactive-form-one/reactive-form-one.component';
+import { ReactiveFormOneComponent, DialogContentExampleDialog, DialogOverviewExampleDialog, TablePaginationExample } from './reactive-form-one/reactive-form-one.component';
 import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormOneComponent,
-    ReactiveFormTwoComponent
+    ReactiveFormTwoComponent,
+    DialogContentExampleDialog,
+    DialogOverviewExampleDialog,
+    TablePaginationExample
   ],
   imports: [
     BrowserModule,
@@ -56,7 +78,18 @@ import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.
     MatOptionModule,
     MatSlideToggleModule,
     MatProgressSpinnerModule,
-    MatTableModule
+    MatProgressBarModule,
+    MatAutocompleteModule,
+    MatDividerModule,
+    MatBadgeModule,
+    MatListModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   exports: [
     MatButtonModule,
@@ -74,7 +107,18 @@ import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.
     MatOptionModule,
     MatSlideToggleModule,
     MatProgressSpinnerModule,
-    MatTableModule
+    MatProgressBarModule,
+    MatAutocompleteModule,
+    MatDividerModule,
+    MatBadgeModule,
+    MatListModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}

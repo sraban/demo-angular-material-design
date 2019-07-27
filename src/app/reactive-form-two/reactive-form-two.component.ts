@@ -26,14 +26,14 @@ export class ReactiveFormTwoComponent implements OnInit {
   
     // To initialize FormGroup  
     this.regiForm = fb.group({  
-      'FirstName' : [null, Validators.required],  
-      'LastName' : [null, Validators.required],  
-      'Address' : [null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],  
-      'DOB' : [null, Validators.required],  
-      'Gender':[null, Validators.required],  
-      'Blog':[null, Validators.required],  
-      'Email':[null, Validators.compose([Validators.required,Validators.email])],  
-      'IsAccepted':[null]  
+      'FirstName' : ['Sraban', Validators.required],  
+      'LastName' : ['Kumar', Validators.required],  
+      'Address' : ['aa aaa aaa aaa aaa aaa aaa aaa', Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],  
+      'DOB' : ['2019-07-18', Validators.required],  
+      'Gender':['Male', Validators.required],  
+      'Blog':['1', Validators.required],  
+      'Email':['skp.pvt@gmail.com', Validators.compose([Validators.required,Validators.email])],  
+      'IsAccepted':[true]  
     });  
   
   }  

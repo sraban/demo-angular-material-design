@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ReactiveFormOneComponent } from './reactive-form-one/reactive-form-one.component';
+import { ReactiveFormOneComponent, DialogContentExampleDialog, DialogOverviewExampleDialog, TablePaginationExample } from './reactive-form-one/reactive-form-one.component';
 import { ReactiveFormTwoComponent } from './reactive-form-two/reactive-form-two.component';
 
 const routes: Routes = [
@@ -19,6 +19,18 @@ const routes: Routes = [
   {
     path: 'register',
     component: ReactiveFormTwoComponent
+  },
+  {
+    path: 'dialog',
+    component: DialogContentExampleDialog
+  },
+  {
+    path: 'dialogOverview',
+    component: DialogOverviewExampleDialog
+  },
+  {
+    path: 'DataTable',
+    component: TablePaginationExample
   }];
 
 @NgModule({
