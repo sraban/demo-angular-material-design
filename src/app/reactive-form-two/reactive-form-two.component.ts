@@ -8,10 +8,10 @@ import { FormBuilder, FormGroup, Validators ,FormsModule,NgForm } from '@angular
 })
 export class ReactiveFormTwoComponent implements OnInit {
   
-  @ViewChild('r') ref:ElementRef<any>;
+  //@ViewChild('r') ref:ElementRef<any>;
   
   ngOnInit() {
-    (<any>this.ref).disabled = false;
+    //(<any>this.ref).disabled = false;
     this.regiForm.controls['DOB'].disable();
   }
 
@@ -50,7 +50,7 @@ export class ReactiveFormTwoComponent implements OnInit {
     
     if (event.checked == true) {  
       this.IsAccepted = 1;
-      (<any>this.ref).disabled = true;
+      //(<any>this.ref).disabled = true;
     } else {  
       this.IsAccepted = 0;
     }  

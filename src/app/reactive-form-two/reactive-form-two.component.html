@@ -60,8 +60,8 @@
                     <td>
                         <span>Gender</span><br><br>
                         <mat-radio-group formControlName="Gender">
-                            <mat-radio-button value="Male">Male</mat-radio-button>
-                            <mat-radio-button value="Female">Female</mat-radio-button>
+                            <mat-radio-button value="Male" disabled>Male</mat-radio-button>
+                            <mat-radio-button value="Female" disabled>Female</mat-radio-button>
                         </mat-radio-group>
                         <mat-error>
                             <span *ngIf="!regiForm.get('Gender').valid && regiForm.get('Gender').touched">Please select any gender !!!</span>
@@ -69,7 +69,7 @@
                     </td>
                     <td><br>
                         <mat-form-field>
-                            <mat-select formControlName="Blog" placeholder="Select Blog">
+                            <mat-select formControlName="Blog" placeholder="Select Blog" disabled>
                                 <mat-option>-- Select Any --</mat-option>
                                 <mat-option value="1">C#Corner</mat-option>
                                 <mat-option value="2">C#Corner</mat-option>
@@ -94,7 +94,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <mat-slide-toggle formControlName="IsAccepted" (change)="onChange($event)" #r>Accept Terms & Conditions</mat-slide-toggle>
+                        <mat-slide-toggle formControlName="IsAccepted" (change)="onChange($event)" [disabled]="true">Accept Terms & Conditions</mat-slide-toggle>
                     </td>
                 </tr>
                 <tr>
